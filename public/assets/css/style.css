@@ -7882,7 +7882,7 @@ header.header--sticky.sticky .nav-area ul li.main-nav {
 }
 
 .rts-banner-area-two {
-  background-image: url(../images/banner/02.webp);
+  background-image: url(../images/banner/strategic-advisory.png);
   height: 850px;
   display: flex;
   align-items: center;
@@ -7894,10 +7894,10 @@ header.header--sticky.sticky .nav-area ul li.main-nav {
   }
 }
 .rts-banner-area-two.two {
-  background-image: url(../images/banner/20.webp);
+  background-image: url(../images/banner/training-services.png);
 }
 .rts-banner-area-two.three {
-  background-image: url(../images/banner/21.webp);
+  background-image: url(../images/banner/performance-mgt.png);
 }
 
 .banner-inner-two-content {
@@ -14939,7 +14939,7 @@ body.with-sticky-item {
 }
 
 .rts-call-to-action-area-two {
-  background-image: url(../images/cta/02.webp);
+  background-image: url(../images/cta/cta.png);
   height: 280px;
   display: flex;
   align-items: center;

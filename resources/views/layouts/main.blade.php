@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Invena – A modern and responsive HTML template for consulting businesses. Perfect for finance, corporate, and agency websites. SEO-friendly, fast-loading, and easy to customize. Create a professional online presence today!">
+        content="@yield('meta_description', 'WorthAfrica – Empowering African businesses through strategic management, analytics, job placement, training, and innovative technology solutions. Discover our suite of products including Nexus, Worth Index, Worth Jobs, and more.')">
    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <meta name="apple-mobile-web-app-title" content="WorthAfrica" />
 <link rel="manifest" href="/site.webmanifest" />
-    <title>WorthAfrica Group - Home</title>
+    <title>@yield('title', 'WorthAfrica Group - Home')</title>
     <link rel="stylesheet preload" href="{{ asset('assets/css/plugins/fontawesome.css') }}" as="style">
     <link rel="stylesheet preload" href="{{ asset('assets/css/plugins/swiper.css') }}" as="style">
     <link rel="stylesheet preload" href="{{ asset('assets/css/plugins/metismenu.css') }}" as="style">

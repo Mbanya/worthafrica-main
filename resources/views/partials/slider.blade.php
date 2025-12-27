@@ -47,7 +47,7 @@
                                     <p class="disc">
                                         Our focus is on being accessible, clear communication and prompt personalized service to our clients.
                                     </p>
-                                    <a href="#" class="rts-btn btn-primary btn-white">Get Consultant</a>
+                                    <a href="#" class="rts-btn btn-primary btn-white">Learn More</a>
                                 </div>
                             </div>
                         </div>
