@@ -49,7 +49,7 @@
                                         <a href="{{ route('home') }}">Home</a>
                                     </li>
                                     <li class="main-nav">
-                                        <a href="{{ route('home') }}#who-we-are">Who we are</a>
+                                        <a href="{{ route('about-us') }}">Who we are</a>
                                     </li>
                                     <li class="main-nav">
                                         <a href="{{ route('what-we-do') }}">What we do</a>

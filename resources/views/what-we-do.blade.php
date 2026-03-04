@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('title', 'What We Do - WorthAfrica Group')
-@section('meta_description', 'Discover WorthAfrica Group\'s comprehensive business solutions: Strategy Consulting (Nexus), Performance Analytics (Worth Index), Executive Search (Worth Jobs), Training (Nobell), Internships (A2B), and IT Solutions (IKEIT).')
+@section('meta_description', 'Discover WorthAfrica Group\'s Our Solutions: Enable (Talent & Workforce Development), AdScale (Impact Enterprise), Nexus (Strategic Advisory), Nobell (Capacity Building), IKEIT (Technology & Innovation), and Projektfi (Project Delivery).')
 
 @section('styles')
 <style>
@@ -306,295 +306,61 @@
                 <div class="title-style-two center mb--50">
                     <span class="bg-content">Solutions</span>
                     <span class="pre">Our Expertise</span>
-                    <h2 class="title rts-text-anime-style-1">Six Pillars of Excellence</h2>
+                    <h2 class="title rts-text-anime-style-1">Our Solutions</h2>
                 </div>
             </div>
         </div>
         <div class="service-nav-cards">
+            <!-- Enable -->
+            <a href="{{ route('home') }}#enable" class="service-nav-card">
+                <div class="icon icon-blue">
+                    <i class="fa-solid fa-users-gear"></i>
+                </div>
+                <h5>Enable</h5>
+                <p>Talent & Skilled Workforce Development</p>
+            </a>
+            <!-- AdScale -->
+            <a href="{{ route('home') }}#adscale" class="service-nav-card">
+                <div class="icon icon-green">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h5>AdScale</h5>
+                <p>Transforming Impact into Enterprise</p>
+            </a>
             <!-- Nexus -->
-            <a href="#nexus" class="service-nav-card">
+            <a href="{{ route('home') }}#nexus" class="service-nav-card">
                 <div class="icon icon-blue">
                     <i class="fa-solid fa-chess-rook"></i>
                 </div>
                 <h5>Nexus</h5>
-                <p>Strategy & Performance Consulting</p>
-            </a>
-            <!-- Worth Index -->
-            <a href="#worth-index" class="service-nav-card">
-                <div class="icon icon-green">
-                    <i class="fa-solid fa-chart-line"></i>
-                </div>
-                <h5>Worth Index</h5>
-                <p>M&E & Performance Analytics</p>
-            </a>
-            <!-- Worth Jobs -->
-            <a href="#worth-jobs" class="service-nav-card">
-                <div class="icon icon-blue">
-                    <i class="fa-solid fa-briefcase"></i>
-                </div>
-                <h5>Worth Jobs</h5>
-                <p>Executive Search & HR Solutions</p>
+                <p>Strategic Advisory & Technical Assistance</p>
             </a>
             <!-- Nobell -->
-            <a href="#nobell" class="service-nav-card">
+            <a href="{{ route('home') }}#nobell" class="service-nav-card">
                 <div class="icon icon-green">
                     <i class="fa-solid fa-graduation-cap"></i>
                 </div>
                 <h5>Nobell</h5>
-                <p>Training & Development</p>
-            </a>
-            <!-- A2B -->
-            <a href="#a2b" class="service-nav-card">
-                <div class="icon icon-blue">
-                    <i class="fa-solid fa-rocket"></i>
-                </div>
-                <h5>A2B</h5>
-                <p>Internships & Apprenticeships</p>
+                <p>Skills Development & Sustainable Performance</p>
             </a>
             <!-- IKEIT -->
-            <a href="#ikeit" class="service-nav-card">
+            <a href="{{ route('home') }}#ikeit" class="service-nav-card">
                 <div class="icon icon-green">
                     <i class="fa-solid fa-laptop-code"></i>
                 </div>
                 <h5>IKEIT</h5>
-                <p>IT Solutions & Technology</p>
+                <p>Technology & Innovation</p>
             </a>
-        </div>
-    </div>
+            <!-- Projektfi -->
+            <a href="{{ route('home') }}#projektfi" class="service-nav-card">
+                <div class="icon icon-blue">
+                    <i class="fa-solid fa-folder-tree"></i>
+                </div>
+                <h5>Projektfi</h5>
+                <p>Project Management & Delivery</p>
+            </a>
 </div>
-
-<!-- NEXUS Section (Blue Theme) -->
-<div id="nexus" class="service-section rts-section-gap">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 pr--50 pr_sm--15">
-                <div class="content-wrapper">
-                    <span class="service-brand-badge badge-blue">Nexus</span>
-                    <h2 class="title mb--25">Strategy & Performance Consulting</h2>
-                    <p class="disc mb--20">
-                        NEXUS is an emerging strategy and performance consulting firm, with particular expertise in strategy management, performance benchmarking, and process transformation for NGOs and SMEs. Leveraging our renowned benchmarking and best practices database, we provide clients with fact-based advice that drives cost optimization and improved service quality.
-                    </p>
-                    <p class="disc mb--30">
-                        Our expertise is a blend of the depth of our experience, technical excellence, and dedication to delivering exceptional service to every single client without exception. Our philosophy is built on a true spirit of bringing together the worth of local expertise and experience.
-                    </p>
-                    <div class="check-wrapper-area">
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-blue"></i>
-                            <p>Strategy Management & Development</p>
-                        </div>
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-blue"></i>
-                            <p>Performance Benchmarking</p>
-                        </div>
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-blue"></i>
-                            <p>Process Transformation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mt_md--50 mt_sm--50">
-                <div class="service-image-container">
-                    <img src="{{ asset('assets/images/service/nexus.png') }}" alt="Nexus Strategy Consulting" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
-
-<!-- WORTH INDEX Section (Green Theme) -->
-<div id="worth-index" class="service-section rts-section-gap">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-2 pl--50 pl_sm--15">
-                <div class="content-wrapper">
-                    <span class="service-brand-badge badge-green">Worth Index</span>
-                    <h2 class="title mb--25">M&E Outsourcing & Performance Analytics</h2>
-                    <p class="disc mb--20">
-                        Our WORTH-INDEX services focus on providing M&E outsourcing services and performance analytics for a wide range of sectors including health, agriculture, education, environment, tourism, and SMEs.
-                    </p>
-                    <p class="disc mb--20">
-                        We provide end to end customized performance tracking outsourcing services ranging from Project M&E, Customer Service Analytics; Markets and Product Performance Assessments. All our services cost far less than what you could normally incur in-house to have an effective performance tracking system.
-                    </p>
-                    <div class="check-wrapper-area">
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-green"></i>
-                            <p>Project M&E Services</p>
-                        </div>
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-green"></i>
-                            <p>Customer Service Analytics</p>
-                        </div>
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-green"></i>
-                            <p>Markets & Product Performance</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 order-lg-1 mt_md--50 mt_sm--50">
-                <div class="service-image-container">
-                    <img src="{{ asset('assets/images/service/worth-index.png') }}" alt="Worth Index Analytics" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- WORTH JOBS Section (Blue Theme) -->
-<div id="worth-jobs" class="service-section rts-section-gap">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 pr--50 pr_sm--15">
-                <div class="content-wrapper">
-                    <span class="service-brand-badge badge-blue">Worth Jobs</span>
-                    <h2 class="title mb--25">Executive Search & Talent Management</h2>
-                    <p class="disc mb--20">
-                        WORTHJOBS is our premier service aimed to support our clients to match great people with great jobs. We use the world's most advanced technology to build bespoke solutions to help you find the best. We always create productive and fruitful relationships with our clients by adding value to your business.
-                    </p>
-                    <p class="disc mb--30">
-                        Our team brings extensive experience and a track record of accomplishments in executive search and talent management. We always aim to bring the highest levels of certainty and satisfaction through a deep-set commitment to our clients, and comprehensive industry expertise.
-                    </p>
-                    <div class="check-wrapper-area">
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-blue"></i>
-                            <p>Executive Search Services</p>
-                        </div>
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-blue"></i>
-                            <p>Talent Management Solutions</p>
-                        </div>
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-blue"></i>
-                            <p>Customized HR Advisory</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mt_md--50 mt_sm--50">
-                <div class="service-image-container">
-                    <img src="{{ asset('assets/images/service/worth-jobs.png') }}" alt="Worth Jobs HR Solutions" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- NOBELL Section (Green Theme) -->
-<div id="nobell" class="service-section rts-section-gap">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-2 pl--50 pl_sm--15">
-                <div class="content-wrapper">
-                    <span class="service-brand-badge badge-green">Nobell</span>
-                    <h2 class="title mb--25">Training & Coaching Solutions</h2>
-                    <p class="disc mb--20">
-                        Nobell as our training division is an emerging market leader in creating essential competency skills by providing relevant training and coaching solutions to individuals and corporate organizations. The Nobell training solutions and practice aims at building a competent manpower pool ready to face the challenges and opportunities arising in dynamic economies in Africa and beyond.
-                    </p>
-                    <p class="disc mb--30">
-                        Our commitment to 'continuous improvement' reflects in our Quality Management Systems and the time we take to design our programmes that incorporate practical training delivery approaches, thus making us a preferred and proficient training partner.
-                    </p>
-                    <div class="check-wrapper-area">
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-green"></i>
-                            <p>Corporate Training Programs</p>
-                        </div>
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-green"></i>
-                            <p>Individual Coaching Solutions</p>
-                        </div>
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-green"></i>
-                            <p>Competency Skills Development</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 order-lg-1 mt_md--50 mt_sm--50">
-                <div class="service-image-container">
-                    <img src="{{ asset('assets/images/service/nobell.png') }}" alt="Nobell Training" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- A2B Section (Blue Theme) -->
-<div id="a2b" class="service-section rts-section-gap">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 pr--50 pr_sm--15">
-                <div class="content-wrapper">
-                    <span class="service-brand-badge badge-blue">A2B</span>
-                    <h2 class="title mb--25">Internships & Apprenticeships</h2>
-                    <p class="disc mb--20">
-                        A2B is our flagship internship service focused on providing opportunities to as many of the brilliant young talents and graduates into the job market to learn the ropes as quickly as possible and begin to contribute to the new rising Africa!
-                    </p>
-                    <p class="disc mb--20">
-                        A2B is aimed to help excelling young people and graduates to realize their dreams through customized and impactful internships and apprenticeships across various corporate organizations and NGOs in Kenya and abroad. We do not focus on one specific sector, or location, so you can have wide range and diversity for opportunities.
-                    </p>
-                    <div class="check-wrapper-area">
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-blue"></i>
-                            <p>Multi-sector Opportunities</p>
-                        </div>
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-blue"></i>
-                            <p>Customized Placements</p>
-                        </div>
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-blue"></i>
-                            <p>Local & International Options</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mt_md--50 mt_sm--50">
-                <div class="service-image-container">
-                    <img src="{{ asset('assets/images/service/a2b.png') }}" alt="A2B Internships" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- IKEIT Section (Green Theme) -->
-<div id="ikeit" class="service-section rts-section-gap">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-2 pl--50 pl_sm--15">
-                <div class="content-wrapper">
-                    <span class="service-brand-badge badge-green">IKEIT</span>
-                    <h2 class="title mb--25">IT Solutions & Technology</h2>
-                    <p class="disc mb--20">
-                        Our Information Technology Solutions enables our clients to optimize performance in major business areas and maximize returns on their technology investments across the enterprise. Whether it is assessing your current performance, implementing process improvements, optimizing your enterprise-wide system or applying technology solutions to business performance issues, our IKEIT teams can lead your company to breakthrough performance improvements.
-                    </p>
-                    <p class="disc mb--30">
-                        We focus on providing IT services that will allow your business to breathe with the relief in knowing that a trusted IT service provider is on your side. Our goal is to ensure that your business never fall short of effective IT services that will allow your system to stay current and up-to-date.
-                    </p>
-                    <div class="check-wrapper-area">
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-green"></i>
-                            <p>Performance Optimization</p>
-                        </div>
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-green"></i>
-                            <p>Enterprise System Solutions</p>
-                        </div>
-                        <div class="single-check mt--15">
-                            <i class="fa-regular fa-circle-check text-green"></i>
-                            <p>Cutting-edge Technology</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 order-lg-1 mt_md--50 mt_sm--50">
-                <div class="service-image-container">
-                    <img src="{{ asset('assets/images/service/ikeit.png') }}" alt="IKEIT Solutions" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
 <!-- CTA Section -->
