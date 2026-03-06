@@ -16,7 +16,7 @@
             </h1>
             <p class="slide-disc s1-disc">Harnessing talent and scalable solutions to accelerate inclusive economic growth.</p>
             <div class="cta-row s1-cta">
-                <a href="#our-solutions" class="btn btn-g"><span>Explore Solutions</span><span class="ba">→</span></a>
+                <a href="{{ route('what-we-do') }}#our-solutions" class="btn btn-g"><span>Explore Solutions</span><span class="ba">→</span></a>
                 <a href="#contact" class="btn btn-o"><span>Partner with us</span><span class="ba">→</span></a>
             </div>
         </div>
@@ -50,7 +50,7 @@
             </h1>
             <p class="slide-disc s2-disc">An ecosystem where technology and innovations drive sustainable impact across the continent.</p>
             <div class="cta-row s2-cta">
-                <a href="#our-solutions" class="btn btn-g"><span>Explore Solutions</span><span class="ba">→</span></a>
+                <a href="{{ route('what-we-do') }}#our-solutions" class="btn btn-g"><span>Explore Solutions</span><span class="ba">→</span></a>
                 <a href="#contact" class="btn btn-o"><span>Partner with us</span><span class="ba">→</span></a>
             </div>
         </div>
@@ -83,7 +83,7 @@
             </h1>
             <p class="slide-disc s3-disc">Advisory and technical support that turns strategy into measurable results.</p>
             <div class="cta-row">
-                <a href="#our-solutions" class="btn btn-g"><span>Explore Solutions</span><span class="ba">→</span></a>
+                <a href="{{ route('what-we-do') }}#our-solutions" class="btn btn-g"><span>Explore Solutions</span><span class="ba">→</span></a>
                 <a href="#contact" class="btn btn-o"><span>Partner with us</span><span class="ba">→</span></a>
             </div>
         </div>
@@ -111,7 +111,7 @@
             </h1>
             <p class="slide-disc s4-disc">Innovative capacity building solutions that deliver measurable results at scale.</p>
             <div class="cta-row">
-                <a href="#our-solutions" class="btn btn-g"><span>Explore Solutions</span><span class="ba">→</span></a>
+                <a href="{{ route('what-we-do') }}#our-solutions" class="btn btn-g"><span>Explore Solutions</span><span class="ba">→</span></a>
                 <a href="#contact" class="btn btn-o"><span>Partner with us</span><span class="ba">→</span></a>
             </div>
         </div>
@@ -140,7 +140,7 @@
                 </h1>
                 <p class="slide-disc" style="max-width:380px">Advancing health access, climate solutions, clean energy, and inclusive growth across Africa.</p>
                 <div class="cta-row s5-cta">
-                    <a href="#our-solutions" class="btn btn-g"><span>Explore Solutions</span><span class="ba">→</span></a>
+                    <a href="{{ route('what-we-do') }}#our-solutions" class="btn btn-g"><span>Explore Solutions</span><span class="ba">→</span></a>
                     <a href="#contact" class="btn btn-o"><span>Partner with us</span><span class="ba">→</span></a>
                 </div>
             </div>
