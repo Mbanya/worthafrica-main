@@ -71,12 +71,12 @@
                     </div>
                     <div class="quick-link-inner">
                         <ul class="links">
-                            <li><a href="{{ route('home') }}#enable"><i class="far fa-arrow-right"></i> Enable</a></li>
-                            <li><a href="{{ route('home') }}#adscale"><i class="far fa-arrow-right"></i> AdScale</a></li>
-                            <li><a href="{{ route('home') }}#nexus"><i class="far fa-arrow-right"></i> Nexus</a></li>
-                            <li><a href="{{ route('home') }}#nobell"><i class="far fa-arrow-right"></i> Nobell</a></li>
-                            <li><a href="{{ route('home') }}#ikeit"><i class="far fa-arrow-right"></i> IKEIT</a></li>
-                            <li><a href="{{ route('home') }}#projektfi"><i class="far fa-arrow-right"></i> Projektfi</a></li>
+                            <li><a href="{{ route('what-we-do') }}#enable"><i class="far fa-arrow-right"></i> Enable</a></li>
+                            <li><a href="{{ route('what-we-do') }}#adscale"><i class="far fa-arrow-right"></i> AdScale</a></li>
+                            <li><a href="{{ route('what-we-do') }}#nexus"><i class="far fa-arrow-right"></i> Nexus</a></li>
+                            <li><a href="{{ route('what-we-do') }}#nobell"><i class="far fa-arrow-right"></i> Nobell</a></li>
+                            <li><a href="{{ route('what-we-do') }}#ikeit"><i class="far fa-arrow-right"></i> IKEIT</a></li>
+                            <li><a href="{{ route('what-we-do') }}#projektfi"><i class="far fa-arrow-right"></i> Projektfi</a></li>
                         </ul>
                     </div>
                 </div>
@@ -85,17 +85,17 @@
             <div class="col-xl-3 col-md-6 col-sm-12 col-12">
                 <div class="footer-one-single-wized">
                     <div class="wized-title">
-                        <h5 class="title">Services</h5>
+                        <h5 class="title">Capabilities</h5>
                         <img loading="lazy" src="{{ asset('assets/images/footer/01.svg') }}" alt="finbiz_footer">
                     </div>
                     <div class="quick-link-inner">
                         <ul class="links">
-                            <li><a href="{{ route('home') }}#enable"><i class="far fa-arrow-right"></i> Talent Development</a></li>
-                            <li><a href="{{ route('home') }}#adscale"><i class="far fa-arrow-right"></i> Impact Enterprise</a></li>
-                            <li><a href="{{ route('home') }}#nexus"><i class="far fa-arrow-right"></i> Strategic Advisory</a></li>
-                            <li><a href="{{ route('home') }}#nobell"><i class="far fa-arrow-right"></i> Capacity Building</a></li>
-                            <li><a href="{{ route('home') }}#ikeit"><i class="far fa-arrow-right"></i> Technology</a></li>
-                            <li><a href="{{ route('home') }}#projektfi"><i class="far fa-arrow-right"></i> Project Delivery</a></li>
+                            <li><a href="{{ route('what-we-do') }}#enable"><i class="far fa-arrow-right"></i> Talent Development</a></li>
+                            <li><a href="{{ route('what-we-do') }}#adscale"><i class="far fa-arrow-right"></i> Impact Enterprise</a></li>
+                            <li><a href="{{ route('what-we-do') }}#nexus"><i class="far fa-arrow-right"></i> Strategic Advisory</a></li>
+                            <li><a href="{{ route('what-we-do') }}#nobell"><i class="far fa-arrow-right"></i> Capacity Building</a></li>
+                            <li><a href="{{ route('what-we-do') }}#ikeit"><i class="far fa-arrow-right"></i> Technology</a></li>
+                            <li><a href="{{ route('what-we-do') }}#projektfi"><i class="far fa-arrow-right"></i> Project Delivery</a></li>
                         </ul>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                     </div>
                     <div class="quick-link-inner">
                         <ul class="links">
-                            <li><a href="{{ route('about-us') }}"><i class="far fa-arrow-right"></i> Who We Are</a></li>
+                            <li><a href="{{ route('home') }}#about-us"><i class="far fa-arrow-right"></i> Who We Are</a></li>
                             <li><a href="{{ route('home') }}#contact"><i class="far fa-arrow-right"></i> Contact Us</a></li>
                         </ul>
                     </div>

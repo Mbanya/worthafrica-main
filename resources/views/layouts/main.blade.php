@@ -50,7 +50,8 @@
     <script defer src="{{ asset('assets/js/plugins/swiper.js') }}"></script>
     <script defer src="{{ asset('assets/js/plugins/contact.form.js') }}"></script>
 
-    <script defer src="{{ asset('assets/js/main.js') }}"></script>
+    <script defer src="{{ asset('assets/js/main.js') }}?v={{ filemtime(public_path('assets/js/main.js')) }}"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     @stack('scripts')
 </body>
 

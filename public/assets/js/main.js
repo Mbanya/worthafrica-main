@@ -326,11 +326,12 @@
       });
     },
     portfoliobounceAnimation: function () {
-      if (device_width > 991) {
-        gsap.set(".rts_jump_animation-wrapper .rts-jump__item", { opacity: 0, scale: 1.15, rotation: 0 })
-        gsap.to(".rts_jump_animation-wrapper .rts-jump__item", {
+      const jumpItems = document.querySelectorAll(".rts_jump_animation-wrapper .rts-jump__item");
+      if (device_width > 991 && jumpItems.length) {
+        gsap.set(jumpItems, { opacity: 0, scale: 1.15, rotation: 0 })
+        gsap.to(jumpItems, {
           scrollTrigger: {
-            trigger: ".rts_jump_animation-wrapper .rts-jump__item",
+            trigger: jumpItems[0],
             start: "top 95%"
           },
           opacity: 1.3,
@@ -341,11 +342,12 @@
           rotation: 0
         })
       }
-      if (device_width > 991) {
-        gsap.set(".rts-jump__item-2", { opacity: 0, scale: 1.15, rotation: 0 })
-        gsap.to(".rts-jump__item-2", {
+      const jumpItems2 = document.querySelectorAll(".rts-jump__item-2");
+      if (device_width > 991 && jumpItems2.length) {
+        gsap.set(jumpItems2, { opacity: 0, scale: 1.15, rotation: 0 })
+        gsap.to(jumpItems2, {
           scrollTrigger: {
-            trigger: ".rts-jump__item-2",
+            trigger: jumpItems2[0],
             start: "top center+=200"
           },
           opacity: 1,
@@ -422,40 +424,39 @@
     },
     imageSlideGsap: function () {
       $(document).ready(function () {
-        gsap.to(".images", {
-          scrollTrigger: {
-            // trigger: ".images",
-            start: "top bottom",
-            end: "bottom top",
-            scrub: 1,
-            // markers: true
-          },
-          x: -250,
-        })
-      });
-      $(document).ready(function () {
-        gsap.to(".images-r", {
-          scrollTrigger: {
-            // trigger: ".images",
-            start: "top bottom",
-            end: "bottom top",
-            scrub: 1,
-            // markers: true
-          },
-          x: 250,
-        })
-      });
-      $(document).ready(function () {
-        gsap.to(".images-2", {
-          scrollTrigger: {
-            // trigger: ".images",
-            start: "top bottom",
-            end: "bottom top",
-            scrub: 1,
-            // markers: true
-          },
-          y: -290,
-        })
+        const images = document.querySelector(".images");
+        if (images) {
+          gsap.to(images, {
+            scrollTrigger: {
+              start: "top bottom",
+              end: "bottom top",
+              scrub: 1,
+            },
+            x: -250,
+          })
+        }
+        const imagesR = document.querySelector(".images-r");
+        if (imagesR) {
+          gsap.to(imagesR, {
+            scrollTrigger: {
+              start: "top bottom",
+              end: "bottom top",
+              scrub: 1,
+            },
+            x: 250,
+          })
+        }
+        const images2 = document.querySelector(".images-2");
+        if (images2) {
+          gsap.to(images2, {
+            scrollTrigger: {
+              start: "top bottom",
+              end: "bottom top",
+              scrub: 1,
+            },
+            y: -290,
+          })
+        }
       });
     },
     swiperActivation: function () {
@@ -767,23 +768,27 @@
         });
       });
       $(document).ready(function () {
-        var swiper = new Swiper(".mySwiper-banner-two", {
-          slidesPerView: 1,
-          spaceBetween: 1,
-          slidesPerGroup: 1,
-          loop: true,
-          effect: "fade",
-          loopFillGroupWithBlank: true,
-          centeredSlides: false,
-          speed: 0,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          autoplay: {
-            delay: 2500,
-          },
-        });
+        var bannerEl = document.querySelector(".mySwiper-banner-two");
+        if (bannerEl && !document.querySelector(".hero-slider-anime")) {
+          new Swiper(".mySwiper-banner-two", {
+            slidesPerView: 1,
+            spaceBetween: 1,
+            slidesPerGroup: 1,
+            loop: true,
+            effect: "fade",
+            loopFillGroupWithBlank: true,
+            centeredSlides: false,
+            speed: 1000,
+            navigation: {
+              nextEl: ".banner-swiper-two .swiper-button-next",
+              prevEl: ".banner-swiper-two .swiper-button-prev",
+            },
+            autoplay: {
+              delay: 6000,
+              disableOnInteraction: false,
+            },
+          });
+        }
       });
       $(document).ready(function () {
         var swiper = new Swiper(".mySwiper-banner-four", {

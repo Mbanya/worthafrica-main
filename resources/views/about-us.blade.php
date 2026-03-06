@@ -4,153 +4,35 @@
 @section('meta_description', 'WorthAfrica is a purpose-driven firm at the intersection of social enterprise, technology, and economic growth — rooted in Africa and connected to global markets.')
 
 @section('styles')
+@include('partials.styles-common')
 <style>
-    .header-main-one-wrapper .thumbnail a img {
-        max-width: 250px !important;
-        max-height: 90px !important;
-        width: auto;
-        height: auto;
-        object-fit: contain;
-    }
-
-    .header-main-one-wrapper {
-        padding: 15px 0;
-    }
-
-    .header-main-one-wrapper .nav-area ul.nav-menu {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .header-main-one-wrapper .nav-area ul.nav-menu li.main-nav {
-        margin: 0;
-        padding: 0;
-    }
-
-    .header-main-one-wrapper .nav-area ul.nav-menu li.main-nav a {
-        padding: 0 5px;
-        white-space: nowrap;
-    }
-
-    @media screen and (max-width: 1300px) {
-        .header-main-one-wrapper .nav-area ul.nav-menu {
-            gap: 30px;
-        }
-    }
-
-    @media screen and (max-width: 1200px) {
-        .header-main-one-wrapper .nav-area ul.nav-menu {
-            gap: 25px;
-        }
-    }
-
-    .rts-sidebar-menu-desktop {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .rts-sidebar-menu-desktop .logo-1 {
-        display: block;
-        margin-bottom: 30px;
-        width: 100%;
-    }
-
-    .rts-sidebar-menu-desktop .logo-1 img.logo {
-        max-width: 150px;
-        height: auto;
-        display: block;
-    }
-
-    .rts-sidebar-menu-desktop .body {
-        width: 100%;
-    }
-
-    .rts-sidebar-menu-desktop .get-in-touch {
-        margin-top: 30px;
-    }
-
-    .rts-sidebar-menu-desktop .get-in-touch .wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .rts-sidebar-menu-desktop .get-in-touch .wrapper .single {
-        display: flex;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .rts-sidebar-menu-desktop .get-in-touch .wrapper .single i {
-        margin-right: 0;
-        margin-bottom: 0;
-        flex-shrink: 0;
-        margin-top: 2px;
-    }
-
-    .rts-sidebar-menu-desktop .get-in-touch .wrapper .single a {
-        word-break: break-word;
-        line-height: 1.5;
-    }
-
-    .mobile-menu .mainmenu {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .mobile-menu .mainmenu li {
-        width: 100%;
-    }
-
-    .mobile-menu .mainmenu li a.main {
-        display: block;
-        padding: 12px 0;
-        width: 100%;
-    }
-
     .breadcrumb-wrapper {
         background: linear-gradient(135deg, rgba(60, 114, 252, 0.95) 0%, rgba(152, 208, 82, 0.95) 100%),
                     url('{{ asset("assets/images/banner/strategic-advisory.png") }}') center/cover;
         padding: 120px 0 80px;
     }
 
-    .about-two-col-text {
-        column-count: 2;
-        column-gap: 2.5rem;
-        column-fill: balance;
-    }
-    .about-subtitle {
-        font-size: 15px;
-        font-weight: 700;
-        color: #3C72FC;
-        margin: 1.25rem 0 0.5rem;
-        break-inside: avoid;
-    }
-    .about-subtitle:first-child {
-        margin-top: 0;
-    }
-    .about-two-col-text .disc {
-        break-inside: avoid;
-        margin-bottom: 1.5rem;
-    }
-    .about-two-col-text .disc:last-child {
-        margin-bottom: 0;
-    }
-    @media (max-width: 991px) {
-        .about-two-col-text {
-            column-count: 1;
-        }
-    }
-
     .our-reach-section {
         padding: 120px 0;
         background: #fff;
+    }
+    #our-reach .our-reach-title .bg-content,
+    #our-reach .our-reach-title .pre,
+    #our-reach .our-reach-title .title {
+        opacity: 0;
+    }
+    #our-reach .our-reach-card {
+        opacity: 0;
+    }
+    #our-reach .our-reach-card .reach-icon {
+        transform: scale(0) rotate(-180deg);
+    }
+    #our-reach .our-reach-card .reach-number {
+        opacity: 0;
+        transform: translateY(20px) scale(0.8);
+    }
+    #our-reach .our-reach-card .reach-label {
+        opacity: 0;
     }
     @media (max-width: 991px) {
         .our-reach-section { padding: 80px 0; }
@@ -193,6 +75,10 @@
     .our-reach-card:nth-child(1) .reach-icon { background: #3C72FC; }
     .our-reach-card:nth-child(2) .reach-icon { background: #98D052; }
     .our-reach-card:nth-child(3) .reach-icon { background: #3C72FC; }
+    .our-reach-card .reach-icon img {
+        filter: brightness(0) invert(1);
+        object-fit: contain;
+    }
     .our-reach-card .reach-number {
         font-size: 42px;
         font-weight: 700;
@@ -369,6 +255,7 @@
         }
     }
 </style>
+@include('partials.wwa-styles')
 @endsection
 
 @section('content')
@@ -392,76 +279,34 @@
     </div>
 </div>
 
-<div id="who-we-are" class="rts-about-area-two rts-section-gap">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="left-thumbnail-about-area-two">
-                    <img loading="lazy" src="{{ asset('assets/images/about/about-us.png') }}" alt="about">
-                    <div class="counter-about-area">
-                        <h2 class="counter title"><span class="odometer" data-count="10">00</span>+
-                        </h2>
-                        <span>Year of experience</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mt_sm--80 mt_md--80">
-                <div class="about-inner-content-two">
-                    <div class="title-style-two left">
-                        <span class="bg-content">About Us</span>
-                        <span class="pre">Who We Are</span>
-                        <h2 class="title rts-text-anime-style-1">Who We Are</h2>
-                    </div>
-                    <div class="about-between-wrapper mb--0">
-                        <div class="about-two-col-text">
-                            <h3 class="about-subtitle">Our Purpose</h3>
-                            <p class="disc">
-                                We are a purpose-driven firm at the intersection of social enterprise, technology, and economic growth. Our work spans continents  rooted in Africa's immense potential and connected to global markets, ideas, and standards.
-                            </p>
-                            <h3 class="about-subtitle">Our Origin</h3>
-                            <p class="disc">
-                                Founded on the belief that talent is universal but opportunity is not, we emerged to bridge the gap between status quo and potential. Our journey began with a commitment to build structures that foster the exchange of ideas and sustainable growth.
-                            </p>
-                            <h3 class="about-subtitle">Our Approach</h3>
-                            <p class="disc">
-                                Sustainable development is not charity  it is enterprise. We build through rigorous quality standards, commercial discipline, and deep community relationships. Every initiative is designed to be financially viable, institutionally credible, and genuinely impactful.
-                            </p>
-                            <h3 class="about-subtitle">Our Portfolio</h3>
-                            <p class="disc">
-                                Enable, AdScale, Nexus, Nobell, IKEIT, and Projektfi  each addresses a distinct gap in the development and enterprise landscape. Together they share a common DNA: quality, scale, and long-term value creation.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="shape-area">
-        <img loading="lazy" src="{{ asset('assets/images/about/shape/01.svg') }}" alt="shape" class="one">
-        <img loading="lazy" src="{{ asset('assets/images/about/shape/02.svg') }}" alt="shape" class="two">
-    </div>
-</div>
+@include('partials.who-we-are-section')
 
-<section class="our-reach-section">
+<section id="our-reach" class="our-reach-section">
     <div class="container">
-        <div class="title-style-two center mb--50">
+        <div class="title-style-two center mb--50 our-reach-title">
             <span class="bg-content">Reach</span>
             <span class="pre">Our Impact</span>
             <h2 class="title rts-text-anime-style-1">Our Reach</h2>
         </div>
         <div class="our-reach-grid">
-            <div class="our-reach-card">
-                <div class="reach-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <div class="our-reach-card" data-reach-card>
+                <div class="reach-icon">
+                    <img src="{{ asset('assets/images/about/icons/04.svg') }}" alt="" width="28" height="28">
+                </div>
                 <div class="reach-number"><span class="odometer" data-count="6">0</span></div>
                 <p class="reach-label">Active Initiatives</p>
             </div>
-            <div class="our-reach-card">
-                <div class="reach-icon"><i class="fa-solid fa-handshake"></i></div>
+            <div class="our-reach-card" data-reach-card>
+                <div class="reach-icon">
+                    <img src="{{ asset('assets/images/about/icons/05.svg') }}" alt="" width="28" height="28">
+                </div>
                 <div class="reach-number"><span class="odometer" data-count="10">0</span>+</div>
                 <p class="reach-label">Partner Organisations</p>
             </div>
-            <div class="our-reach-card">
-                <div class="reach-icon"><i class="fa-solid fa-users"></i></div>
+            <div class="our-reach-card" data-reach-card>
+                <div class="reach-icon">
+                    <img src="{{ asset('assets/images/about/icons/01.svg') }}" alt="" width="28" height="28">
+                </div>
                 <div class="reach-number"><span class="odometer" data-count="25">0</span>+</div>
                 <p class="reach-label">Professionals Involved</p>
             </div>
@@ -660,6 +505,7 @@
 @endsection
 
 @push('scripts')
+<script defer src="{{ asset('assets/js/wwa-anime.js') }}?v={{ file_exists(public_path('assets/js/wwa-anime.js')) ? filemtime(public_path('assets/js/wwa-anime.js')) : time() }}"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const tabs = document.querySelectorAll('.hexagon-tabs-nav button[data-tab]');

@@ -4,117 +4,8 @@
 @section('meta_description', 'Discover WorthAfrica Group\'s Our Solutions: Enable (Talent & Workforce Development), AdScale (Impact Enterprise), Nexus (Strategic Advisory), Nobell (Capacity Building), IKEIT (Technology & Innovation), and Projektfi (Project Delivery).')
 
 @section('styles')
+@include('partials.styles-common')
 <style>
-    .header-main-one-wrapper .thumbnail a img {
-        max-width: 250px !important;
-        max-height: 90px !important;
-        width: auto;
-        height: auto;
-        object-fit: contain;
-    }
-
-    .header-main-one-wrapper {
-        padding: 15px 0;
-    }
-
-    .header-main-one-wrapper .nav-area ul.nav-menu {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .header-main-one-wrapper .nav-area ul.nav-menu li.main-nav {
-        margin: 0;
-        padding: 0;
-    }
-
-    .header-main-one-wrapper .nav-area ul.nav-menu li.main-nav a {
-        padding: 0 5px;
-        white-space: nowrap;
-    }
-
-    @media screen and (max-width: 1300px) {
-        .header-main-one-wrapper .nav-area ul.nav-menu {
-            gap: 30px;
-        }
-    }
-
-    @media screen and (max-width: 1200px) {
-        .header-main-one-wrapper .nav-area ul.nav-menu {
-            gap: 25px;
-        }
-    }
-
-    .rts-sidebar-menu-desktop {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .rts-sidebar-menu-desktop .logo-1 {
-        display: block;
-        margin-bottom: 30px;
-        width: 100%;
-    }
-
-    .rts-sidebar-menu-desktop .logo-1 img.logo {
-        max-width: 150px;
-        height: auto;
-        display: block;
-    }
-
-    .rts-sidebar-menu-desktop .body {
-        width: 100%;
-    }
-
-    .rts-sidebar-menu-desktop .get-in-touch {
-        margin-top: 30px;
-    }
-
-    .rts-sidebar-menu-desktop .get-in-touch .wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .rts-sidebar-menu-desktop .get-in-touch .wrapper .single {
-        display: flex;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .rts-sidebar-menu-desktop .get-in-touch .wrapper .single i {
-        margin-right: 0;
-        margin-bottom: 0;
-        flex-shrink: 0;
-        margin-top: 2px;
-    }
-
-    .rts-sidebar-menu-desktop .get-in-touch .wrapper .single a {
-        word-break: break-word;
-        line-height: 1.5;
-    }
-
-    .mobile-menu .mainmenu {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .mobile-menu .mainmenu li {
-        width: 100%;
-    }
-
-    .mobile-menu .mainmenu li a.main {
-        display: block;
-        padding: 12px 0;
-        width: 100%;
-    }
-
-    /* Custom Page Styles */
     :root {
         --color-primary-blue: #3C72FC;
         --color-primary-green: #98D052;
@@ -135,21 +26,65 @@
     .badge-blue { background-color: var(--color-primary-blue); }
     .badge-green { background-color: var(--color-primary-green); }
 
+    #our-solutions {
+        scroll-margin-top: 100px;
+    }
+
     .service-section {
         position: relative;
         overflow: hidden;
-        border-bottom: 1px solid #eee;
+        padding: 80px 0;
+        scroll-margin-top: 120px;
     }
-    .service-section:last-child {
-        border-bottom: none;
+    .service-section:last-of-type {
+        padding-bottom: 100px;
     }
 
     .service-section:nth-child(even) {
-        background: #f9f9f9;
+        background: linear-gradient(180deg, #fafbfc 0%, #f5f7fa 100%);
     }
 
     .service-section .content-wrapper {
-        padding: 20px 0;
+        padding: 30px 0;
+    }
+
+    .service-section .content-wrapper .title {
+        font-size: 28px;
+        line-height: 1.3;
+        margin-bottom: 25px;
+    }
+
+    .service-section .content-wrapper .disc {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #4a5568;
+    }
+
+    .service-section .content-wrapper .disc + .disc {
+        margin-top: 18px;
+    }
+
+    @media (max-width: 991px) {
+        .service-section {
+            padding: 60px 0;
+        }
+        .service-section .pr--50 { padding-right: 15px; }
+        .service-section .pl--50 { padding-left: 15px; }
+        .service-section .mt_md--50,
+        .service-section .mt_sm--50 {
+            margin-top: 40px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .service-section {
+            padding: 50px 0;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .service-section .pr--50 { padding-right: 50px; }
+        .service-section .pl--50 { padding-left: 50px; }
     }
 
     .service-icon-large {
@@ -168,22 +103,24 @@
     .icon-green { background-color: var(--color-primary-green); }
 
     .service-image-container {
-        border-radius: 15px;
+        border-radius: 16px;
         overflow: hidden;
-        box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-        height: 100%;
-        min-height: 400px;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+        min-height: 320px;
+        display: flex;
+        align-items: center;
     }
 
     .service-image-container img {
         width: 100%;
         height: 100%;
+        min-height: 320px;
         object-fit: cover;
         transition: transform 0.5s ease;
     }
 
     .service-image-container:hover img {
-        transform: scale(1.05);
+        transform: scale(1.03);
     }
 
     .breadcrumb-wrapper {
@@ -298,70 +235,159 @@
     </div>
 </div>
 
-<!-- Service Navigation Cards -->
-<div class="rts-section-gap">
-    <div class="container">
+<!-- rts service area start -->
+<div id="our-solutions" class="rts-section-gapTop">
+    <div class="container pb--50">
         <div class="row">
             <div class="col-lg-12">
-                <div class="title-style-two center mb--50">
+                <div class="title-style-two center">
                     <span class="bg-content">Solutions</span>
-                    <span class="pre">Our Expertise</span>
+                    <span class="pre">What We Offer</span>
                     <h2 class="title rts-text-anime-style-1">Our Solutions</h2>
                 </div>
             </div>
         </div>
-        <div class="service-nav-cards">
-            <!-- Enable -->
-            <a href="{{ route('home') }}#enable" class="service-nav-card">
-                <div class="icon icon-blue">
-                    <i class="fa-solid fa-users-gear"></i>
+    </div>
+
+<!-- Enable Section (Blue Theme) -->
+<div id="enable" class="service-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 pr--50 pr_sm--15">
+                <div class="content-wrapper">
+                    <span class="service-brand-badge badge-blue">Enable</span>
+                    <h2 class="title mb--25">Revolutionising Talent & Skilled Workforce Development</h2>
+                    <p class="disc mb--20">
+                        The Enable Initiative is a partnership for connecting quality skilled workforce across Africa and Europe through an innovative work-readiness programme that delivers job-ready, pre-vetted talent. By identifying, assessing, mentoring, and developing emerging professionals, Enable provides employers with skilled candidates aligned to quality standards, while creating sustainable career pathways that support inclusive economic growth. Through ongoing strategic support, Enable ensures long-term value for employers and meaningful, scalable impact.
+                    </p>
                 </div>
-                <h5>Enable</h5>
-                <p>Talent & Skilled Workforce Development</p>
-            </a>
-            <!-- AdScale -->
-            <a href="{{ route('home') }}#adscale" class="service-nav-card">
-                <div class="icon icon-green">
-                    <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="col-lg-6 mt_md--50 mt_sm--50">
+                <div class="service-image-container">
+                    <img src="{{ asset('assets/images/service/enable.png') }}" alt="Enable Initiative" loading="lazy">
                 </div>
-                <h5>AdScale</h5>
-                <p>Transforming Impact into Enterprise</p>
-            </a>
-            <!-- Nexus -->
-            <a href="{{ route('home') }}#nexus" class="service-nav-card">
-                <div class="icon icon-blue">
-                    <i class="fa-solid fa-chess-rook"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- AdScale Section (Green Theme) -->
+<div id="adscale" class="service-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2 pl--50 pl_sm--15">
+                <div class="content-wrapper">
+                    <span class="service-brand-badge badge-green">AdScale</span>
+                    <h2 class="title mb--25">Transforming Impact into Enterprise</h2>
+                    <p class="disc mb--20">
+                        AdScale transforms development impact by commercializing NGO models, proving effective social interventions can achieve sustainability and scale. This encourages innovation, entrepreneurship, and market-based solutions, generating attractive returns for impact investors.
+                    </p>
+                    <p class="disc mb--20">
+                        AdScale initiative provides an innovative platform for new opportunities that leverage NGOs expertise and community relationships whilst adding commercial capabilities. We thus, partner with NGOs to ensure impact integrity and build their enterprise capacity for a sustainable impact.
+                    </p>
                 </div>
-                <h5>Nexus</h5>
-                <p>Strategic Advisory & Technical Assistance</p>
-            </a>
-            <!-- Nobell -->
-            <a href="{{ route('home') }}#nobell" class="service-nav-card">
-                <div class="icon icon-green">
-                    <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="col-lg-6 order-lg-1 mt_md--50 mt_sm--50">
+                <div class="service-image-container">
+                    <img src="{{ asset('assets/images/service/worth-index.png') }}" alt="AdScale Initiative" loading="lazy">
                 </div>
-                <h5>Nobell</h5>
-                <p>Skills Development & Sustainable Performance</p>
-            </a>
-            <!-- IKEIT -->
-            <a href="{{ route('home') }}#ikeit" class="service-nav-card">
-                <div class="icon icon-green">
-                    <i class="fa-solid fa-laptop-code"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Nexus Section (Blue Theme) -->
+<div id="nexus" class="service-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 pr--50 pr_sm--15">
+                <div class="content-wrapper">
+                    <span class="service-brand-badge badge-blue">Nexus</span>
+                    <h2 class="title mb--25">Strategic Advisory & Technical Assistance Network for Africa</h2>
+                    <p class="disc mb--20">
+                        Nexus elevates Africa's strategic advisory ecosystem, making world-class expertise accessible to forward thinking enterprises, development partners, and governments.
+                    </p>
+                    <p class="disc mb--20">
+                        Africa requires sophisticated strategic advisory, but world-class consultancy is often prohibitively expensive, and exceptional independent consultants struggle to scale their impact. Nexus addresses both by creating a quality-assured network that connects seasoned experts with high-value projects, providing institutional infrastructure for enterprise-grade delivery, while fostering knowledge transfer and capacity building.
+                    </p>
                 </div>
-                <h5>IKEIT</h5>
-                <p>Technology & Innovation</p>
-            </a>
-            <!-- Projektfi -->
-            <a href="{{ route('home') }}#projektfi" class="service-nav-card">
-                <div class="icon icon-blue">
-                    <i class="fa-solid fa-folder-tree"></i>
+            </div>
+            <div class="col-lg-6 mt_md--50 mt_sm--50">
+                <div class="service-image-container">
+                    <img src="{{ asset('assets/images/service/nexus.png') }}" alt="Nexus Strategy Consulting" loading="lazy">
                 </div>
-                <h5>Projektfi</h5>
-                <p>Project Management & Delivery</p>
-            </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Nobell Section (Green Theme) -->
+<div id="nobell" class="service-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2 pl--50 pl_sm--15">
+                <div class="content-wrapper">
+                    <span class="service-brand-badge badge-green">Nobell</span>
+                    <h2 class="title mb--25">From Skills Development to Sustainable Performance</h2>
+                    <p class="disc mb--20">
+                        Nobell is a capacity building and performance initiative built on the core belief that exceptional talent and sustained high performance are created, not discovered. Thus, Nobell initiative recognises that tailored training and continuous performance support are the cornerstones of nurturing, developing, and sustaining Africa's talent. Through carefully curated training programmes, experience-based learning, coaching, mentorship, and advanced technological innovation, the Nobell initiative is designed to scale Africa's talent to unmatched levels of excellence, competitiveness, and global relevance.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1 mt_md--50 mt_sm--50">
+                <div class="service-image-container">
+                    <img src="{{ asset('assets/images/service/nobell.png') }}" alt="Nobell Training" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- IKEIT Section (Green Theme) -->
+<div id="ikeit" class="service-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 pr--50 pr_sm--15">
+                <div class="content-wrapper">
+                    <span class="service-brand-badge badge-green">IKEIT</span>
+                    <h2 class="title mb--25">Driving Technology & Innovation for Sustainable Impact</h2>
+                    <p class="disc mb--20">
+                        IKEIT Initiative focus on bridging Africa's technology and innovation gap, recognising the transformative potential of technology to improve health access, strengthen food security, advance women's empowerment, and address climate change. Through the IKEIT Initiative, it serves as a central hub for identifying, validating, and deploying high-impact technologies and innovations tailored to African contexts. The platform brings together innovators, implementers, and partners to develop strategic innovation partnerships, while providing technical assistance, deployment support, and ongoing maintenance to ensure solutions are scalable, resilient, and sustainable. By translating innovation into practical, real-world impact, IKEIT accelerates inclusive development and long-term systems change across the continent.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 mt_md--50 mt_sm--50">
+                <div class="service-image-container">
+                    <img src="{{ asset('assets/images/service/ikeit.png') }}" alt="IKEIT Solutions" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Projektfi Section (Blue Theme) -->
+<div id="projektfi" class="service-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2 pl--50 pl_sm--15">
+                <div class="content-wrapper">
+                    <span class="service-brand-badge badge-blue">Projektfi</span>
+                    <h2 class="title mb--25">Africa Hub for Effective Projects Delivery</h2>
+                    <p class="disc mb--20">
+                        Projektfi initiative provides project management and delivery services as surge capacity and technical assistance, enabling clients to implement development and business initiatives efficiently and at scale. It can host, manage, and deliver projects or grants on behalf of clients, with clearly defined results, quality standards, and accountability frameworks. By outsourcing project delivery to Projektfi, clients avoid the need to establish temporary or disruptive internal structures, systems, or teams. This approach ensures rapid mobilisation, effective execution, and high-quality outcomes—allowing clients to remain focused on their core mandates while projects are delivered professionally, transparently, and to agreed performance targets.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1 mt_md--50 mt_sm--50">
+                <div class="service-image-container">
+                    <img src="{{ asset('assets/images/service/projektfi.png') }}" alt="Projektfi Project Delivery" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </div>
-</div>
+<!-- rts service area end -->
 
 <!-- CTA Section -->
 <div class="rts-call-to-action-area-two bg_image">
