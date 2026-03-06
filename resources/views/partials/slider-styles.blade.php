@@ -201,7 +201,13 @@
 .hero-slider-anime .btn-o:hover { border-color: var(--g); background: var(--off); color: var(--gdk); }
 
 /* Slide 1 */
-.hero-slider-anime .s1 { width: 100%; min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; align-items: center; background: var(--w); position: relative; overflow: hidden; }
+.hero-slider-anime .s1 { width: 100%; min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; align-items: center; background: var(--ink); position: relative; overflow: hidden; }
+.hero-slider-anime .s1 .slide-title { color: var(--w); }
+.hero-slider-anime .s1 .slide-disc { color: rgba(255,255,255,.6); }
+.hero-slider-anime .s1 .eyebrow-pill { background: var(--g); color: var(--ink); }
+.hero-slider-anime .s1 .hl { color: var(--g); }
+.hero-slider-anime .s1 .btn-o { color: var(--w); border-color: rgba(255,255,255,.25); }
+.hero-slider-anime .s1 .btn-o:hover { border-color: var(--g); color: var(--g); background: rgba(152,208,82,.08); }
 .hero-slider-anime .s1-deco { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
 .hero-slider-anime .s1-arc {
     position: absolute; right: -120px; top: -120px;
@@ -212,12 +218,12 @@
 .hero-slider-anime .s1-ring {
     position: absolute; right: 200px; top: -60px;
     width: 340px; height: 340px; border-radius: 50%;
-    border: 2.5px solid var(--g); opacity: 0;
+    border: 2.5px solid rgba(152,208,82,.5); opacity: 0;
 }
 .hero-slider-anime .s1-bracket {
     position: absolute; bottom: 80px; left: 60px;
     width: 68px; height: 68px;
-    border-left: 3px solid var(--g); border-bottom: 3px solid var(--g);
+    border-left: 3px solid rgba(152,208,82,.6); border-bottom: 3px solid rgba(152,208,82,.6);
     opacity: 0;
 }
 .hero-slider-anime .s1-pill {
@@ -227,7 +233,7 @@
 .hero-slider-anime .s1-dotgrid {
     position: absolute; bottom: 18%; right: 7%;
     width: 110px; height: 110px; opacity: 0;
-    background-image: radial-gradient(circle, var(--g) 2px, transparent 2px);
+    background-image: radial-gradient(circle, rgba(152,208,82,.5) 2px, transparent 2px);
     background-size: 18px 18px;
 }
 .hero-slider-anime .s1-content { padding: 0 56px 0 90px; }
@@ -250,22 +256,28 @@
 }
 .hero-slider-anime .s1-badge .bv { font-family: 'Red Hat Display', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--ink); line-height: 1; }
 .hero-slider-anime .s1-badge .bl { font-size: .9rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--ink); opacity: .7; }
-.hero-slider-anime .s1-o1 { position: absolute; width: 300px; height: 300px; border-radius: 50%; border: 1.5px solid var(--g); top:50%; left:50%; transform: translate(-50%,-50%); opacity: 0; }
-.hero-slider-anime .s1-o2 { position: absolute; width: 420px; height: 420px; border-radius: 50%; border: 1.5px dashed var(--bdr); top:50%; left:50%; transform: translate(-50%,-50%); opacity: 0; }
+.hero-slider-anime .s1-o1 { position: absolute; width: 300px; height: 300px; border-radius: 50%; border: 1.5px solid rgba(152,208,82,.5); top:50%; left:50%; transform: translate(-50%,-50%); opacity: 0; }
+.hero-slider-anime .s1-o2 { position: absolute; width: 420px; height: 420px; border-radius: 50%; border: 1.5px dashed rgba(152,208,82,.25); top:50%; left:50%; transform: translate(-50%,-50%); opacity: 0; }
 .hero-slider-anime .odot { position: absolute; width: 12px; height: 12px; border-radius: 50%; background: var(--g); top: -6px; left: 50%; transform: translateX(-50%); box-shadow: 0 0 10px var(--g); }
 
 /* Slide 2 */
-.hero-slider-anime .s2 { width:100%; min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; background:var(--w); position:relative; overflow:hidden; }
+.hero-slider-anime .s2 { width:100%; min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; background:var(--ink); position:relative; overflow:hidden; }
+.hero-slider-anime .s2 .slide-title { color: var(--w); }
+.hero-slider-anime .s2 .slide-disc { color: rgba(255,255,255,.6); }
+.hero-slider-anime .s2 .eyebrow-pill { background: var(--g); color: var(--ink); }
+.hero-slider-anime .s2 .hl { color: var(--g); }
+.hero-slider-anime .s2 .btn-o { color: var(--w); border-color: rgba(255,255,255,.25); }
+.hero-slider-anime .s2 .btn-o:hover { border-color: var(--g); color: var(--g); background: rgba(152,208,82,.08); }
 .hero-slider-anime .s2-deco { position:absolute; inset:0; pointer-events:none; overflow:hidden; }
 .hero-slider-anime .s2-bigcircle {
     position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
     width:700px; height:700px; border-radius:50%;
-    border: 2px solid var(--bdr); opacity:0;
+    border: 2px solid rgba(255,255,255,.12); opacity:0;
 }
 .hero-slider-anime .s2-bigcircle2 {
     position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
     width:500px; height:500px; border-radius:50%;
-    border: 1.5px dashed var(--g); opacity:0;
+    border: 1.5px dashed rgba(152,208,82,.4); opacity:0;
 }
 .hero-slider-anime .s2-gfill {
     position:absolute; left:50%; top:-180px; transform:translateX(-50%);
@@ -291,7 +303,7 @@
 }
 .hero-slider-anime .s2-dotL { position:absolute; left:18%; top:28%; width:14px; height:14px; border-radius:50%; background:var(--g); opacity:0; }
 .hero-slider-anime .s2-dotR { position:absolute; right:18%; bottom:28%; width:10px; height:10px; border-radius:50%; background:var(--gdk); opacity:0; }
-.hero-slider-anime .s2-hline { position:absolute; bottom:22%; left:50%; transform:translateX(-50%); height:2px; width:0; background:linear-gradient(to right, transparent, var(--g), transparent); }
+.hero-slider-anime .s2-hline { position:absolute; bottom:22%; left:50%; transform:translateX(-50%); height:2px; width:0; background:linear-gradient(to right, transparent, rgba(152,208,82,.6), transparent); }
 .hero-slider-anime .s2-content { position:relative; z-index:10; max-width:720px; padding:0 40px; display:flex; flex-direction:column; align-items:center; gap:0; }
 .hero-slider-anime .s2-pill { margin-bottom:24px; }
 .hero-slider-anime .s2-title { font-size: clamp(4.2rem, 8vw, 7.5rem); margin-bottom: 32px; }
@@ -300,7 +312,13 @@
 .hero-slider-anime .s2-cta { justify-content:center; }
 
 /* Slide 3 */
-.hero-slider-anime .s3 { width:100%; min-height:100vh; display:grid; grid-template-columns:1fr 1fr; align-items:center; background:var(--off); position:relative; overflow:hidden; }
+.hero-slider-anime .s3 { width:100%; min-height:100vh; display:grid; grid-template-columns:1fr 1fr; align-items:center; background:var(--ink); position:relative; overflow:hidden; }
+.hero-slider-anime .s3 .slide-title { color: var(--w); }
+.hero-slider-anime .s3 .slide-disc { color: rgba(255,255,255,.6); }
+.hero-slider-anime .s3 .eyebrow-pill { background: var(--g); color: var(--ink); }
+.hero-slider-anime .s3 .hl { color: var(--g); }
+.hero-slider-anime .s3 .btn-o { color: var(--w); border-color: rgba(255,255,255,.25); }
+.hero-slider-anime .s3 .btn-o:hover { border-color: var(--g); color: var(--g); background: rgba(152,208,82,.08); }
 .hero-slider-anime .s3-deco { position:absolute; inset:0; pointer-events:none; overflow:hidden; }
 .hero-slider-anime .s3-sqbig {
     position:absolute; left:-100px; top:50%; transform:translateY(-50%) rotate(18deg);
@@ -318,13 +336,13 @@
 .hero-slider-anime .s3-bgtext {
     position:absolute; left:-20px; top:50%; transform:translateY(-50%);
     font-family:'Red Hat Display', sans-serif; font-size:clamp(220px,28vw,400px); font-weight:800;
-    color:transparent; -webkit-text-stroke:2px var(--bdr);
+    color:transparent; -webkit-text-stroke:2px rgba(255,255,255,.08);
     line-height:1; user-select:none; opacity:0; white-space:nowrap;
 }
 .hero-slider-anime .s3-dotgrid {
     position:absolute; right:5%; top:20%;
     width:100px; height:100px; opacity:0;
-    background-image: radial-gradient(circle, var(--gdk) 2px, transparent 2px);
+    background-image: radial-gradient(circle, rgba(152,208,82,.5) 2px, transparent 2px);
     background-size:18px 18px;
 }
 .hero-slider-anime .s3-visual { position:relative; min-height:100%; z-index:5; }
@@ -334,7 +352,13 @@
 .hero-slider-anime .s3-stats { margin:28px 0; }
 
 /* Slide 4 */
-.hero-slider-anime .s4 { width:100%; min-height:100vh; background:var(--w); position:relative; overflow:hidden; display:flex; align-items:center; }
+.hero-slider-anime .s4 { width:100%; min-height:100vh; background:var(--ink); position:relative; overflow:hidden; display:flex; align-items:center; }
+.hero-slider-anime .s4 .slide-title { color: var(--w); }
+.hero-slider-anime .s4 .slide-disc { color: rgba(255,255,255,.6); }
+.hero-slider-anime .s4 .eyebrow-pill { background: var(--g); color: var(--ink); }
+.hero-slider-anime .s4 .hl { color: var(--g); }
+.hero-slider-anime .s4 .btn-o { color: var(--w); border-color: rgba(255,255,255,.25); }
+.hero-slider-anime .s4 .btn-o:hover { border-color: var(--g); color: var(--g); background: rgba(152,208,82,.08); }
 .hero-slider-anime .s4-panel {
     position:absolute; left:0; top:0; height:100%;
     width:38%; clip-path:polygon(0 0,100% 0,82% 100%,0 100%);
@@ -361,19 +385,19 @@
 .hero-slider-anime .s4-dotgrid {
     position:absolute; right:5%; bottom:15%;
     width:120px; height:120px; opacity:0;
-    background-image: radial-gradient(circle, var(--g) 2px, transparent 2px);
+    background-image: radial-gradient(circle, rgba(152,208,82,.5) 2px, transparent 2px);
     background-size:18px 18px;
 }
 .hero-slider-anime .s4-hline {
     position:absolute; right:5%; top:22%;
     height:3px; width:160px;
-    background:linear-gradient(to left, transparent, var(--g));
+    background:linear-gradient(to left, transparent, rgba(152,208,82,.6));
     opacity:0;
 }
 .hero-slider-anime .s4-ring {
     position:absolute; right:-80px; top:50%; transform:translateY(-50%);
     width:320px; height:320px; border-radius:50%;
-    border:2px solid var(--bdr); opacity:0;
+    border:2px solid rgba(255,255,255,.1); opacity:0;
 }
 .hero-slider-anime .s4-deco { position:absolute; inset:0; pointer-events:none; z-index:1; overflow:hidden; }
 .hero-slider-anime .s4-content { position:relative; z-index:10; margin-left:46%; padding-right:80px; max-width:580px; }

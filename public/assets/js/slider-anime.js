@@ -5,8 +5,8 @@
   const home = document.getElementById('home');
   if (!home || !home.classList.contains('hero-slider-anime')) return;
 
-  const DARK_SLIDES = [4];
-  const HEADER_DARK_SLIDES = [3, 4];
+  const DARK_SLIDES = [0, 1, 2, 3, 4];
+  const HEADER_DARK_SLIDES = [0, 1, 2, 3, 4];
   const DURATION = 7000;
   let current = 0;
   let isAnimating = false;
