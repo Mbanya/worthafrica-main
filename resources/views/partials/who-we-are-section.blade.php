@@ -55,7 +55,7 @@
                     <button type="button" class="wwa-tab active" data-tab="0">Purpose</button>
                     <button type="button" class="wwa-tab" data-tab="1">Origin</button>
                     <button type="button" class="wwa-tab" data-tab="2">Approach</button>
-                    <button type="button" class="wwa-tab" data-tab="3">Portfolio</button>
+                    {{-- <button type="button" class="wwa-tab" data-tab="3">Portfolio</button> --}}
                 </div>
 
                 <div class="wwa-panels">
@@ -67,12 +67,12 @@
                         <p class="wwa-panel-body">
                             We are a purpose-driven firm at the intersection of social enterprise, technology, and economic growth. Our work spans continents — rooted in Africa's immense potential and connected to global markets, ideas, and standards.
                         </p>
-                        <div class="wwa-chips">
+                        {{-- <div class="wwa-chips">
                             <span class="wwa-chip">Social Enterprise</span>
                             <span class="wwa-chip">Economic Growth</span>
                             <span class="wwa-chip">Africa-First</span>
                             <span class="wwa-chip">Global Standards</span>
-                        </div>
+                        </div> --}}
                         <div class="wwa-quote">Talent is universal — we exist to make opportunity the same.</div>
                         <br>
                         <button type="button" class="wwa-next" data-next="1">Our Origin <span class="wwa-next-arr">→</span></button>
@@ -86,12 +86,12 @@
                         <p class="wwa-panel-body">
                             Founded on the belief that talent is universal but opportunity is not, we emerged to bridge the gap between status quo and potential. Our journey began with a commitment to build structures that foster the exchange of ideas and sustainable growth.
                         </p>
-                        <div class="wwa-chips">
+                        {{-- <div class="wwa-chips">
                             <span class="wwa-chip">10+ Years</span>
                             <span class="wwa-chip">Gap Bridging</span>
                             <span class="wwa-chip">Structural Change</span>
                             <span class="wwa-chip">Ideas Exchange</span>
-                        </div>
+                        </div> --}}
                         <div class="wwa-quote">We didn't wait for the ecosystem to be ready. We built it.</div>
                         <br>
                         <button type="button" class="wwa-next" data-next="2">Our Approach <span class="wwa-next-arr">→</span></button>
@@ -105,18 +105,18 @@
                         <p class="wwa-panel-body">
                             Sustainable development is not charity — it is enterprise. We build through rigorous quality standards, commercial discipline, and deep community relationships. Every initiative is designed to be financially viable, institutionally credible, and genuinely impactful.
                         </p>
-                        <div class="wwa-chips">
+                        {{-- <div class="wwa-chips">
                             <span class="wwa-chip">Commercial Discipline</span>
                             <span class="wwa-chip">Quality Standards</span>
                             <span class="wwa-chip">Community-Led</span>
                             <span class="wwa-chip">Financial Viability</span>
-                        </div>
+                        </div> --}}
                         <div class="wwa-quote">Development is not charity — it's the most demanding form of enterprise.</div>
                         <br>
                         <button type="button" class="wwa-next" data-next="3">Our Portfolio <span class="wwa-next-arr">→</span></button>
                     </div>
 
-                    <div class="wwa-panel" data-panel="3">
+                    {{-- <div class="wwa-panel" data-panel="3">
                         <div class="wwa-panel-header">
                             <div class="wwa-icon"><i class="fa-solid fa-folder-open"></i></div>
                             <div class="wwa-panel-title">Our Portfolio</div>
@@ -157,7 +157,7 @@
                             </a>
                         </div>
                         <button type="button" class="wwa-next" data-next="0">Back to Purpose <span class="wwa-next-arr">↺</span></button>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

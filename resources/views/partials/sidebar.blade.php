@@ -57,6 +57,9 @@
                     <a href="{{ route('about-us') }}" class="main" aria-expanded="false">Who we are</a>
                 </li>
                 <li>
+                    <a href="{{ route('home') }}#our-solutions" class="main" aria-expanded="false">Our solutions</a>
+                </li>
+                <li>
                     <a href="{{ route('what-we-do') }}" class="main" aria-expanded="false">What we do</a>
                 </li>
                 <li>

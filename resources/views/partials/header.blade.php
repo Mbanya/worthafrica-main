@@ -52,6 +52,9 @@
                                         <a href="{{ route('home') }}#about-us">Who we are</a>
                                     </li>
                                     <li class="main-nav">
+                                        <a href="{{ route('home') }}#our-solutions">Our solutions</a>
+                                    </li>
+                                    <li class="main-nav">
                                         <a href="{{ route('what-we-do') }}">What we do</a>
                                     </li>
                                     <li class="main-nav">

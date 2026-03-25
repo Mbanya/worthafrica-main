@@ -326,6 +326,7 @@
     loop();
   })();
 
+  updateUI(0);
   animIn(slideEls[0], 0);
   startProg();
   schedule();

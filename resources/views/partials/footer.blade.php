@@ -129,8 +129,8 @@
                             <div class="signle-contact-information mb--20">
                                 <div class="information-wrapper">
                                     <span>Any questions? Contact us online or call on:</span>
-                                    <a href="tel:+254736508817">
-                                        <h6 class="title">+254 736 508 817</h6>
+                                    <a href="tel:+254798143183">
+                                        <h6 class="title">+254 798 143 183</h6>
                                     </a>
                                 </div>
                             </div>

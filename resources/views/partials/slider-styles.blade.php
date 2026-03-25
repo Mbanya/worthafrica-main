@@ -78,7 +78,8 @@
     color: rgba(255,255,255,.95) !important;
 }
 
-.hero-section .header-hero-overlay.header-over-dark .thumbnail img {
+.hero-section .header-hero-overlay.header-over-dark .thumbnail img,
+.hero-section .header-hero-overlay.header-over-dark .menu-light {
     filter: brightness(0) invert(1);
 }
 
@@ -111,7 +112,8 @@
     color: #0f1a0a !important;
 }
 
-.hero-section .header-hero-overlay.header-over-dark.header--sticky.sticky .thumbnail img {
+.hero-section .header-hero-overlay.header-over-dark.header--sticky.sticky .thumbnail img,
+.hero-section .header-hero-overlay.header-over-dark.header--sticky.sticky .menu-light {
     filter: none;
 }
 
@@ -201,7 +203,8 @@
 .hero-slider-anime .btn-o:hover { border-color: var(--g); background: var(--off); color: var(--gdk); }
 
 /* Slide 1 */
-.hero-slider-anime .s1 { width: 100%; min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; align-items: center; background: var(--ink); position: relative; overflow: hidden; }
+.hero-slider-anime .s1 { width: 100%; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: var(--ink); position: relative; overflow: hidden; }
+.hero-slider-anime .s1 .hl::after { transform-origin: center; }
 .hero-slider-anime .s1 .slide-title { color: var(--w); }
 .hero-slider-anime .s1 .slide-disc { color: rgba(255,255,255,.6); }
 .hero-slider-anime .s1 .eyebrow-pill { background: var(--g); color: var(--ink); }
@@ -236,13 +239,14 @@
     background-image: radial-gradient(circle, rgba(152,208,82,.5) 2px, transparent 2px);
     background-size: 18px 18px;
 }
-.hero-slider-anime .s1-content { padding: 0 56px 0 90px; }
+.hero-slider-anime .s1-content { position: relative; z-index: 10; padding: 0 40px; max-width: 920px; display: flex; flex-direction: column; align-items: center; }
 .hero-slider-anime .s1-title { font-size: clamp(4rem, 7.5vw, 7rem); margin: 24px 0 32px; }
-.hero-slider-anime .s1-disc { max-width: 440px; }
+.hero-slider-anime .s1-disc { max-width: 640px; text-align: center; }
 .hero-slider-anime .s1-stats { margin: 28px 0; }
+.hero-slider-anime .s1-cta { justify-content: center; }
 .hero-slider-anime .s1-visual {
+    position: absolute; inset: 0; pointer-events: none; z-index: 1;
     display: flex; align-items: center; justify-content: center;
-    min-height: 100%; position: relative; z-index: 5;
 }
 .hero-slider-anime .s1-num {
     font-family: 'Red Hat Display', sans-serif; font-size: clamp(160px, 20vw, 290px); font-weight: 800;
@@ -266,6 +270,7 @@
 .hero-slider-anime .s2 .slide-disc { color: rgba(255,255,255,.6); }
 .hero-slider-anime .s2 .eyebrow-pill { background: var(--g); color: var(--ink); }
 .hero-slider-anime .s2 .hl { color: var(--g); }
+.hero-slider-anime .s2 .hl::after { transform-origin: center; }
 .hero-slider-anime .s2 .btn-o { color: var(--w); border-color: rgba(255,255,255,.25); }
 .hero-slider-anime .s2 .btn-o:hover { border-color: var(--g); color: var(--g); background: rgba(152,208,82,.08); }
 .hero-slider-anime .s2-deco { position:absolute; inset:0; pointer-events:none; overflow:hidden; }
@@ -312,7 +317,8 @@
 .hero-slider-anime .s2-cta { justify-content:center; }
 
 /* Slide 3 */
-.hero-slider-anime .s3 { width:100%; min-height:100vh; display:grid; grid-template-columns:1fr 1fr; align-items:center; background:var(--ink); position:relative; overflow:hidden; }
+.hero-slider-anime .s3 { width:100%; min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; background:var(--ink); position:relative; overflow:hidden; }
+.hero-slider-anime .s3 .hl::after { transform-origin: center; }
 .hero-slider-anime .s3 .slide-title { color: var(--w); }
 .hero-slider-anime .s3 .slide-disc { color: rgba(255,255,255,.6); }
 .hero-slider-anime .s3 .eyebrow-pill { background: var(--g); color: var(--ink); }
@@ -345,14 +351,16 @@
     background-image: radial-gradient(circle, rgba(152,208,82,.5) 2px, transparent 2px);
     background-size:18px 18px;
 }
-.hero-slider-anime .s3-visual { position:relative; min-height:100%; z-index:5; }
-.hero-slider-anime .s3-content { padding:0 90px 0 50px; z-index:10; position:relative; }
+.hero-slider-anime .s3-visual { display: none; }
+.hero-slider-anime .s3-content { padding:0 40px; z-index:10; position:relative; max-width:920px; display:flex; flex-direction:column; align-items:center; }
 .hero-slider-anime .s3-title { font-size: clamp(4rem, 7vw, 7rem); margin: 24px 0 32px; }
-.hero-slider-anime .s3-disc { max-width:440px; }
+.hero-slider-anime .s3-disc { max-width:640px; text-align:center; }
 .hero-slider-anime .s3-stats { margin:28px 0; }
+.hero-slider-anime .s3 .cta-row { justify-content: center; }
 
 /* Slide 4 */
-.hero-slider-anime .s4 { width:100%; min-height:100vh; background:var(--ink); position:relative; overflow:hidden; display:flex; align-items:center; }
+.hero-slider-anime .s4 { width:100%; min-height:100vh; background:var(--ink); position:relative; overflow:hidden; display:flex; justify-content:center; align-items:center; text-align:center; }
+.hero-slider-anime .s4 .hl::after { transform-origin: center; }
 .hero-slider-anime .s4 .slide-title { color: var(--w); }
 .hero-slider-anime .s4 .slide-disc { color: rgba(255,255,255,.6); }
 .hero-slider-anime .s4 .eyebrow-pill { background: var(--g); color: var(--ink); }
@@ -400,10 +408,10 @@
     border:2px solid rgba(255,255,255,.1); opacity:0;
 }
 .hero-slider-anime .s4-deco { position:absolute; inset:0; pointer-events:none; z-index:1; overflow:hidden; }
-.hero-slider-anime .s4-content { position:relative; z-index:10; margin-left:46%; padding-right:80px; max-width:580px; }
-.hero-slider-anime .s4-content .cta-row { flex-wrap: nowrap; }
+.hero-slider-anime .s4-content { position:relative; z-index:10; margin-left:0; padding:0 40px; max-width:800px; display:flex; flex-direction:column; align-items:center; }
+.hero-slider-anime .s4-content .cta-row { flex-wrap: wrap; justify-content: center; }
 .hero-slider-anime .s4-title { font-size: clamp(3.8rem, 6.5vw, 6.2rem); margin: 24px 0 32px; }
-.hero-slider-anime .s4-disc { max-width:400px; }
+.hero-slider-anime .s4-disc { max-width:640px; text-align:center; }
 .hero-slider-anime .s4-stats { margin:28px 0; }
 
 /* Slide 5 — dark */
@@ -416,6 +424,7 @@
 .hero-slider-anime .s5 .btn-o { color: var(--w); border-color: rgba(255,255,255,.25); }
 .hero-slider-anime .s5 .btn-o:hover { border-color:var(--g); color:var(--g); background:rgba(152,208,82,.08); }
 .hero-slider-anime .s5 .hl { color: var(--g); }
+.hero-slider-anime .s5 .hl::after { transform-origin: center; }
 .hero-slider-anime .s5-deco { position:absolute; inset:0; pointer-events:none; overflow:hidden; z-index:1; }
 .hero-slider-anime .s5-burst {
     position:absolute; left:50%; top:-200px; transform:translateX(-50%);
@@ -444,10 +453,11 @@
     line-height:1; user-select:none; opacity:0;
 }
 .hero-slider-anime .s5-content { position:relative; z-index:10; width:100%; padding:0 90px; display:flex; justify-content:center; align-items:center; }
-.hero-slider-anime .s5-left { max-width: 580px; }
+.hero-slider-anime .s5-left { max-width: 800px; text-align: center; display: flex; flex-direction: column; align-items: center; }
 .hero-slider-anime .s5-left .slide-title { font-size: clamp(4rem, 7vw, 7rem); margin: 24px 0 32px; }
+.hero-slider-anime .s5-left .slide-disc { max-width: 640px; margin-left: auto; margin-right: auto; }
 .hero-slider-anime .s5-stats { flex-direction: row; gap: 32px; margin-top: 24px; }
-.hero-slider-anime .s5-cta { margin-top: 28px; }
+.hero-slider-anime .s5-cta { margin-top: 28px; justify-content: center; }
 
 /* Chrome */
 .hero-slider-anime .slide-progress {
@@ -510,11 +520,8 @@
 .hero-slider-anime .sh-dark  .scroll-track { background:rgba(255,255,255,.15); }
 
 @media(max-width:860px){
-    .hero-slider-anime .s1 { grid-template-columns:1fr!important; }
     .hero-slider-anime .s1-visual { display:none; }
-    .hero-slider-anime .s3 { grid-template-columns:1fr!important; }
-    .hero-slider-anime .s3-visual { display:none; }
-    .hero-slider-anime .s4-content { margin-left:0!important; padding:0 28px!important; }
+    .hero-slider-anime .s4-content { padding:0 28px!important; }
     .hero-slider-anime .s4-panel { width:100%; clip-path:polygon(0 0,100% 0,100% 28%,0 38%); height:40%; top:0; }
     .hero-slider-anime .s2-content { padding:0 28px; }
     .hero-slider-anime .s5-content { padding:0 28px; }

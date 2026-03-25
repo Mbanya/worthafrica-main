@@ -1,5 +1,5 @@
 <section class="hero-section" id="hero-section">
-    <header class="header-one header--sticky header-hero-overlay">
+    <header class="header-one header--sticky header-hero-overlay header-over-dark">
         <div class="header-top-area-wrapper">
             <div class="container">
                 <div class="row">
@@ -40,6 +40,7 @@
                                     <ul class="nav-menu">
                                         <li class="main-nav"><a href="{{ route('home') }}">Home</a></li>
                                         <li class="main-nav"><a href="{{ route('home') }}#about-us">Who we are</a></li>
+                                        <li class="main-nav"><a href="{{ route('home') }}#our-solutions">Our solutions</a></li>
                                         <li class="main-nav"><a href="{{ route('what-we-do') }}">What we do</a></li>
                                         <li class="main-nav"><a href="{{ route('home') }}#contact">Contact</a></li>
                                     </ul>

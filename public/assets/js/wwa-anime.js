@@ -245,14 +245,9 @@
                 const number = card.querySelector('.reach-number');
                 const label = card.querySelector('.reach-label');
                 const delay = 550 + i * 180;
-                tl.add({ targets: icon, scale: [0, 1], rotate: [-180, 0], duration: 700, easing: 'easeOutElastic(1,.6)' }, delay)
+                tl.add({ targets: icon, opacity: [0, 1], translateY: [10, 0], duration: 450, easing: 'easeOutQuad' }, delay)
                     .add({ targets: number, opacity: [0, 1], translateY: [20, 0], scale: [0.8, 1], duration: 550, easing: 'easeOutBack' }, delay + 120)
                     .add({ targets: label, opacity: [0, 1], translateY: [8, 0], duration: 450 }, delay + 220);
-            });
-
-            cards.forEach(function (card, i) {
-                const icon = card.querySelector('.reach-icon');
-                anime({ targets: icon, scale: [1, 1.06, 1], duration: 2200, delay: 1400 + i * 350, loop: true, easing: 'easeInOutSine' });
             });
 
             cards.forEach(function (card) {

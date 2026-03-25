@@ -25,7 +25,8 @@
         opacity: 0;
     }
     #our-reach .our-reach-card .reach-icon {
-        transform: scale(0) rotate(-180deg);
+        opacity: 0;
+        transform: translateY(10px);
     }
     #our-reach .our-reach-card .reach-number {
         opacity: 0;
@@ -290,22 +291,22 @@
         </div>
         <div class="our-reach-grid">
             <div class="our-reach-card" data-reach-card>
-                <div class="reach-icon">
-                    <img src="{{ asset('assets/images/about/icons/04.svg') }}" alt="" width="28" height="28">
+                <div class="reach-icon" aria-hidden="true">
+                    <img src="{{ asset('assets/images/service/icons/02.svg') }}" alt="" width="28" height="28">
                 </div>
                 <div class="reach-number"><span class="odometer" data-count="6">0</span></div>
                 <p class="reach-label">Active Initiatives</p>
             </div>
             <div class="our-reach-card" data-reach-card>
-                <div class="reach-icon">
-                    <img src="{{ asset('assets/images/about/icons/05.svg') }}" alt="" width="28" height="28">
+                <div class="reach-icon" aria-hidden="true">
+                    <img src="{{ asset('assets/images/service/icons/10.svg') }}" alt="" width="28" height="28">
                 </div>
                 <div class="reach-number"><span class="odometer" data-count="10">0</span>+</div>
                 <p class="reach-label">Partner Organisations</p>
             </div>
             <div class="our-reach-card" data-reach-card>
-                <div class="reach-icon">
-                    <img src="{{ asset('assets/images/about/icons/01.svg') }}" alt="" width="28" height="28">
+                <div class="reach-icon" aria-hidden="true">
+                    <img src="{{ asset('assets/images/service/icons/13.svg') }}" alt="" width="28" height="28">
                 </div>
                 <div class="reach-number"><span class="odometer" data-count="25">0</span>+</div>
                 <p class="reach-label">Professionals Involved</p>

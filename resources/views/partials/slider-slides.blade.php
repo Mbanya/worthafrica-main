@@ -138,7 +138,7 @@
                     <span class="tl"><span class="tli"><span class="hl">Sustainable</span></span></span>
                     <span class="tl"><span class="tli">Impact</span></span>
                 </h1>
-                <p class="slide-disc" style="max-width:380px">Advancing health access, climate solutions, clean energy, and inclusive growth across Africa.</p>
+                <p class="slide-disc">Advancing health access, climate solutions, clean energy, and inclusive growth across Africa.</p>
                 <div class="cta-row s5-cta">
                     <a href="{{ route('what-we-do') }}#our-solutions" class="btn btn-g"><span>Explore Solutions</span><span class="ba">→</span></a>
                     <a href="#contact" class="btn btn-o"><span>Partner with us</span><span class="ba">→</span></a>
