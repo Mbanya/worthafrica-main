@@ -49,13 +49,13 @@
                                         <a href="{{ route('home') }}">Home</a>
                                     </li>
                                     <li class="main-nav">
-                                        <a href="{{ route('home') }}#about-us">Who we are</a>
+                                        <a href="{{ route('home') }}#about-us">About Us</a>
                                     </li>
                                     <li class="main-nav">
-                                        <a href="{{ route('home') }}#our-solutions">Our solutions</a>
+                                        <a href="{{ route('home') }}#our-solutions">What We Do</a>
                                     </li>
                                     <li class="main-nav">
-                                        <a href="{{ route('what-we-do') }}">What we do</a>
+                                        <a href="{{ route('what-we-do') }}">Our Solutions</a>
                                     </li>
                                     <li class="main-nav">
                                         <a href="{{ route('home') }}#contact">Contact</a>

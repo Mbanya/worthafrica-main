@@ -217,8 +217,8 @@
 @include('partials.header')
 
 <!-- Breadcrumb Area -->
-<div class="breadcrumb-wrapper">
-    <div class="container">
+{{-- <div class="breadcrumb-wrapper">
+    {{-- <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="title-area-left text-center">
@@ -232,8 +232,8 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </div> --}}
+{{-- </div> --}} 
 
 <!-- rts service area start -->
 <div id="our-solutions" class="rts-section-gapTop">
