@@ -529,7 +529,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="title-area-left text-center">
-                    <span class="pre" style="color: rgba(255,255,255,0.9);">Our Solutions</span>
+                    {{-- <span class="pre" style="color: rgba(255,255,255,0.9);">Our Solutions</span> --}}
                     <h1 class="title rts-text-anime-style-1" style="color: #fff; margin-bottom: 15px;">
                         What We Do
                     </h1>
@@ -545,13 +545,13 @@
 <div class="rts-section-gap">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            {{-- <div class="col-lg-12">
                 <div class="title-style-two center mb--50">
                     <span class="bg-content">Solutions</span>
                     <span class="pre">Our Expertise</span>
                     <h2 class="title rts-text-anime-style-1">Our Solutions</h2>
                 </div>
-            </div>
+            </div> --}}
         </div>
         <div class="service-nav-cards">
             <a href="{{ route('what-we-do') }}#enable" class="service-nav-card">

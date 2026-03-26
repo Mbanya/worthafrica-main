@@ -10,7 +10,7 @@
                                     <a href="mailto:info@worthafrica.org"><i class="fal fa-envelope"></i>
                                         info@worthafrica.org</a>
                                 </div>
-                            
+
                             </div>
                             <div class="right">
                                 <ul class="social-wrapper-one">
@@ -40,8 +40,8 @@
                                     <ul class="nav-menu">
                                         <li class="main-nav"><a href="{{ route('home') }}">Home</a></li>
                                         <li class="main-nav"><a href="{{ route('home') }}#about-us">Who we are</a></li>
-                                        <li class="main-nav"><a href="{{ route('home') }}#our-solutions">Our solutions</a></li>
-                                        <li class="main-nav"><a href="{{ route('what-we-do') }}">What we do</a></li>
+                                        <li class="main-nav"><a href="{{ route('home') }}#our-solutions">What we do</a></li>
+                                        <li class="main-nav"><a href="{{ route('what-we-do') }}">Our solutions</a></li>
                                         <li class="main-nav"><a href="{{ route('home') }}#contact">Contact</a></li>
                                     </ul>
                                 </div>
