@@ -10,7 +10,7 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="WorthAfrica" />
+<meta name="apple-mobile-web-app-title" content="WorthAfrica Limited" />
 <link rel="manifest" href="/site.webmanifest" />
     <title>@yield('title', 'WorthAfrica Group - Home')</title>
     <link rel="stylesheet preload" href="{{ asset('assets/css/plugins/fontawesome.css') }}" as="style">

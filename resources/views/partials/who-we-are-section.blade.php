@@ -47,7 +47,7 @@
             <div class="wwa-right">
                 <div class="wwa-headline" id="wwa-headline">
                     <span class="wwa-pre">Who We Are</span>
-                    <h2 class="wwa-h2">Built on <span>Purpose</span>,<br>Driven by <span>Impact</span></h2>
+                    <h2 class="wwa-h2">Built on <span>Purpose</span>, <br>Driven by <span>Impact</span></h2>
                     <p class="wwa-h2-sub">A purpose-driven firm at the intersection of social enterprise, technology, and economic growth — rooted in Africa, connected to the world.</p>
                 </div>
 
