@@ -65,7 +65,9 @@
                             <div class="wwa-panel-title">Our Purpose</div>
                         </div>
                         <p class="wwa-panel-body">
-                            We are a purpose-driven firm at the intersection of social enterprise, technology, and economic growth. Our work spans continents — rooted in Africa's immense potential and connected to global markets, ideas, and standards.
+                            We are a purpose-driven firm at the intersection of social enterprise, technology, and economic growth.
+                            Our work spans continents — rooted in Africa's immense potential and connected to global markets, ideas,
+                            and standards.
                         </p>
                         {{-- <div class="wwa-chips">
                             <span class="wwa-chip">Social Enterprise</span>
@@ -84,7 +86,8 @@
                             <div class="wwa-panel-title">Our Origin</div>
                         </div>
                         <p class="wwa-panel-body">
-                            Founded on the belief that talent is universal but opportunity is not, we emerged to bridge the gap between status quo and potential. Our journey began with a commitment to build structures that foster the exchange of ideas and sustainable growth.
+                            Founded on the belief that talent is universal but opportunity is not, we emerged to bridge the gap between status quo and potential.
+                             Our journey began with a commitment to build structures that foster the exchange of ideas and sustainable growth.
                         </p>
                         {{-- <div class="wwa-chips">
                             <span class="wwa-chip">10+ Years</span>
@@ -103,7 +106,9 @@
                             <div class="wwa-panel-title">Our Approach</div>
                         </div>
                         <p class="wwa-panel-body">
-                            Sustainable development is not charity — it is enterprise. We build through rigorous quality standards, commercial discipline, and deep community relationships. Every initiative is designed to be financially viable, institutionally credible, and genuinely impactful.
+                            Sustainable development is not charity — it is enterprise. We build through rigorous quality standards,
+                            commercial discipline, and deep community relationships. Every initiative is designed to be financially viable,
+                            institutionally credible, and genuinely impactful.
                         </p>
                         {{-- <div class="wwa-chips">
                             <span class="wwa-chip">Commercial Discipline</span>

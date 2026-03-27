@@ -9,9 +9,9 @@
                                 <a href="mailto:info@worthafrica.org"><i class="fal fa-envelope"></i>
                                     info@worthafrica.org</a>
                             </div>
-                            <div class="working-time">
+                            {{-- <div class="working-time">
                                 <p><i class="fal fa-clock"></i> Working: 8.00am - 5.00pm</p>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="right">
                             {{-- <ul class="top-nav">
